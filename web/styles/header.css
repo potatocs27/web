@@ -1,7 +1,6 @@
 header {
     padding-top: 20px;
     width: 100%;
-
 }
 
 #logo {
@@ -25,7 +24,7 @@ header {
 }
 
 nav {
-  text-align: center;  
+  text-align: center; 
 }
 
 ul li {
