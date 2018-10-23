@@ -1,57 +1,58 @@
-var slideIndex = 0;
-var slides, dots;
-showSlides();
+var banner_Index = 0;
+var banner_Slides, dots;
+banner_ShowSlides();
 
 // Next/previous controls
-function plusSlides(position) {
-  slideIndex +=position;
-  if (slideIndex> slides.length) {slideIndex = 1}
-  else if(slideIndex<1){slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-     slides[i].style.display = "none";  
+function banner_PlusSlides(position) {
+  banner_Index +=position;
+  if (banner_Index> banner_Slides.length) {banner_Index = 1}
+  else if(banner_Index<1){banner_Index = banner_Slides.length}
+  for (i = 0; i < banner_Slides.length; i++) {
+    banner_Slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  banner_Slides[banner_Index-1].style.display = "block";  
+  dots[banner_Index-1].className += " active";
 }
 
 // Thumbnail image controls
-function currentSlide(index) {
-  if (index> slides.length) {index = 1}
-  else if(index<1){index = slides.length}
-  for (i = 0; i < slides.length; i++) {
-     slides[i].style.display = "none";  
+function banner_CurrentSlide(index) {
+  if (index> banner_Slides.length) {index = 1}
+  else if(index<1){index = banner_Slides.length}
+  for (i = 0; i < banner_Slides.length; i++) {
+    banner_Slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[index-1].style.display = "block";  
+  banner_Slides[index-1].style.display = "block";  
   dots[index-1].className += " active";
 }
 
 
 
 
-function showSlides() {
+function banner_ShowSlides() {
   var i;
-  slides = document.getElementsByClassName("slide");
+  banner_Slides = document.getElementsByClassName("banner_Slide");
   dots = document.getElementsByClassName("dot"); 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
+  for (i = 0; i < banner_Slides.length; i++) {
+    banner_Slides[i].style.display = "none"; 
   } 
 
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1} 
+  banner_Index++;
+  if (banner_Index > banner_Slides.length) {banner_Index = 1} 
 
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
 
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000);
+  banner_Slides[banner_Index-1].style.display = "block"; 
+  dots[banner_Index-1].className += " active";
+
+  setTimeout(banner_ShowSlides, 3000);
 }
 
 

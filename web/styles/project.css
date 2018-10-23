@@ -4,11 +4,6 @@
     height: 50%;
 }
 
-.ptitle {
-    margin: 0 auto;
-    width: 439px;
-}
-
 .case {
     max-width: 25%;
     max-height: 25%;
@@ -18,7 +13,7 @@
     margin-right: auto;
 }
 
-.pimages {
+.project_Images {
     text-align: center;
 }
 

@@ -1,0 +1,9 @@
+.title {
+    margin: 10px auto;
+    width: 439px;
+}
+
+/* displays default image */
+.default_Image {
+    display: initial;
+}
