@@ -1,0 +1,67 @@
+.project_Content {
+    margin-top: 3%;
+}
+
+.project_Sidebar {
+    position: relative;
+    left: 15%;
+    max-width: 12%;
+    float: left;
+}
+
+.project_Sidebar h4 {
+    padding: 25px 20px;
+    background-color: navy;
+    color: white;
+    max-width: 100%;
+    
+}
+
+
+
+.project_Category h4 {
+    padding: 10px 50px 10px 18px;
+    background: rgb(236, 232, 232);
+    border: 1px solid;
+    margin: 2px 0;
+}
+
+
+
+.project_Category h4 a {
+    color: rgb(75, 75, 155);
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    display: block;
+
+}
+
+.project_Sidebar img {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.project_Company {
+    height: 750px;
+    overflow-y: hidden;
+    position: relative;
+    left: 17%;
+    max-width: 55%;
+}
+
+.project_Company h3 {
+    font-weight:normal;
+    position: relative;
+    margin-bottom: 20px;
+    color:#666;
+}
+
+
+.project_Company hr {
+    position: relative;
+    max-width: 90%;
+    color: gray;
+    margin: 0 0 20px 0;
+}
